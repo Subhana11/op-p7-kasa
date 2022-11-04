@@ -1,0 +1,8 @@
+@import "./settings.css";
+@import "./components/header.css";
+@import "./components/banner.css";
+@import "./components/logements.css";
+
+@import "./components/footer.css";
+
+@import "./components/location.css";

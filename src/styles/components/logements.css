@@ -1,0 +1,55 @@
+.logements {
+  background: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 56px 50px;
+  margin: 0 100px 0 100px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 10px;
+  height: 340px;
+  width: 340px;
+  position: relative;
+}
+.card img {
+  object-fit: cover;
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+}
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #ffffff;
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+}
+@media screen and (max-width: 694px) {
+  .logements {
+    margin: 0 21px 0 19px;
+    padding: 0;
+    background: white;
+    gap: 20px;
+  }
+  .card,
+  .card img {
+    height: 255px;
+    width: 335px;
+  }
+}

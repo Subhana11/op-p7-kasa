@@ -1,0 +1,124 @@
+.containerdropdown {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin: 24px 100px 24px 100px;
+}
+.description {
+  width: 50%;
+  margin-bottom: 200px;
+}
+.equipements {
+  width: 50%;
+  margin-bottom: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px 24px 100px;
+}
+
+.infogauche {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.infotitre h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: left;
+  color: #ff6060;
+}
+.infotitre h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ff6060;
+  margin-bottom: 20px;
+}
+.infodroite .host {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.5%;
+  margin-bottom: 20px;
+}
+.infodroite p {
+  color: #ff6060;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+}
+.infodroite img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  .info,
+  .containerdropdown {
+    margin: 30px 20px 24px 20px;
+  }
+  .infotitre h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 694px) {
+  .infotitre h1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0px 0 5px;
+  }
+  .infotitre h2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .infotitre {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .info {
+    margin: 15px 20px 0px 20px;
+    flex-direction: column;
+  }
+
+  .infodroite {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+  .infodroite .host {
+    margin-top: 15px;
+    margin-bottom: 16.5px;
+  }
+  .infodroite img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  .infodroite p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .containerdropdown {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px 0px 20px;
+  }
+  .description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .equipements {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

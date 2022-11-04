@@ -1,0 +1,57 @@
+.bannersection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 223px;
+  mix-blend-mode: darken;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0 100px 43px 100px;
+}
+.bannersection img {
+  object-fit: cover;
+  width: 100%;
+
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  z-index: 0;
+}
+.bannersection h1 {
+  position: absolute;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 980px) {
+  .bannersection h1 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 694px) {
+  .bannersection h1 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding: 31px 102px 32px 36px;
+  }
+  .bannersection {
+    margin: 0 20px 22px 20px;
+    border-radius: 10px;
+    height: 111px;
+  }
+  .bannersection img {
+    border-radius: 10px;
+    height: 111px;
+
+    object-position: bottom center;
+  }
+}
