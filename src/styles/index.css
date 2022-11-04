@@ -2,7 +2,11 @@
 @import "./components/header.css";
 @import "./components/banner.css";
 @import "./components/logements.css";
-@import "./components/dropdown.css";
-@import "./components/footer.css";
 
-@import "./components/location.css";
+@import "./components/footer.css";
+@import "./components/dropdown.css";
+@import "./components/locationproduct.css";
+@import "./components/caroussel.css";
+@import "./components/rating.css";
+@import "./components/tag.css";
+@import "./components/about.css";
