@@ -1,5 +1,4 @@
 import Dropdown from "../components/Dropdown";
-
 import Header from "../components/Header";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -7,7 +6,7 @@ import Footer from "../components/Footer";
 import Caroussel from "../components/Caroussel";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
-import Error404 from "./Error404";
+import Error404 from "./Error404";// page Error404.jsx
 
 const Locationproduct = () => {
   const [data, setData] = useState({
@@ -17,9 +16,9 @@ const Locationproduct = () => {
     rating: "",
     host: { name: "", picture: "" },
   });
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(false); // 1er value et value updated, false-valeur d départ
   let { id } = useParams();
-
+// déclancher une fonction quand l'état du composant change
   useEffect(
     function () {
       fetch("/liste.json")
@@ -36,7 +35,7 @@ const Locationproduct = () => {
         })
         .catch((error) => console.log(error));
     },
-    [id]
+    [id]  //tableau pour stopper la boucle
   );
 
   if (error) {
