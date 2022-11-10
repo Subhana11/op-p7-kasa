@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+//utilisation de props{imgsrc}, pour réutiliser se composant dans la page Home,et About
+//avec une image differente
 const Banner = ({ imgsrc, title, altText }) => {
   return (
     <section className="bannersection ">

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Logements = () => {
   const [data, setData] = useState([]);
-
+//1er value and value updated, valeur de départ [vide]
   useEffect(function () {
     fetch("/liste.json")
       .then((response) => {
@@ -13,7 +13,7 @@ const Logements = () => {
         return setData(data);
       })
       .catch((error) => console.log(error));
-  }, []);
+  }, []); //tableau pour stopper la fonction
 
   return (
     <div className="logements">

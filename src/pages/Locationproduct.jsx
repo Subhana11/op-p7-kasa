@@ -16,7 +16,8 @@ const Locationproduct = () => {
     rating: "",
     host: { name: "", picture: "" },
   });
-  const [error, setError] = useState(false); // 1er value et value updated, false-valeur d départ
+  // 1er value et value updated, false-valeur de départ
+  const [error, setError] = useState(false); 
   let { id } = useParams();
 // déclancher une fonction quand l'état du composant change
   useEffect(
